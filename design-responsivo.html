@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Responsivo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Etapa 1: Regras de uso geral, ou seja, regras que vão definir como um todo (indenpendentemente das telas) */
+
+        body {
+            background-color: lightblue;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: darkblue;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: darkblue;
+        }
+
+        b {
+            background-color: white;
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        p {
+            font-size: 18px
+        }
+
+        /* Estapa 2: regras de uso condificonal, ou seja, são configurações que somente entrarão em funcionamento se um ou mais requisitos forem atendidos (MEDIA QUERIES).  */
+
+        @media screen and (min-width:534px) {
+            p {
+                font-size: 22px;
+            }
+
+            hr {
+                height: 3px;
+                background-color: red;
+            }
+        }
+
+        @media screen and (min-width:611px) {
+            body {
+                background-color: lightgreen;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            b {
+                font-style: italic;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            body {
+                background:linear-gradient(to left,rgb(21, 21, 133), rgb(206, 77, 77));
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+            h1 {
+                font-size: 50px;
+                text-transform: uppercase;
+                color: green;
+            }
+
+            p {
+                font-size: 25px;
+                line-height: 32px;
+                text-align: right;
+            }
+
+            b {
+                text-shadow: 2px 2px 1px black;
+                border: 1px solid red;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="exemplo">
+        <h1>Design Responsivo (ou responsividade)</h1>
+        <hr>
+        <p>Conjunto de técnicas de desenvolvimento front-end visando a construção de sites que funcionem corretamente em
+            dispositivos com telas de tamanhos variados.</p>
+
+        <p>Existem 2 abordagens de desenvolvimento: <b>Mobile First</b> e <b>Desktop First</b>.</p>
+
+        <p>A mais utilizada é a <b>Mobile First</b>.</p>
+    </div>
+</body>
+
+</html>

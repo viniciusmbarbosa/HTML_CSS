@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos para título e textos</title>
+    <style>
+        /* Regras CSS: todas escritas aqui, valerão para todos os elementos somente desta página */
+
+        h1 {
+            text-align: center;
+            color: #000000b0;
+        }
+
+        body {
+            font-family: georgia;
+            background:linear-gradient(to left, #c76767, #b12b2b, #ee8c8c)
+        }
+        header{
+            background-color: rgba(187, 115, 93, 0.589);
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: black 5px 5px 5px;
+        }
+        a:hover{
+            background: rgb(226, 60, 60);
+            padding: 5px;
+            border-radius: 10px;
+            text-transform: none;
+            text-decoration: none;
+        }
+        a{
+            text-decoration: none;
+            color: #b12b2b;
+            background: #c76767;
+            padding: 3px;
+            border-radius: 5px;
+        }
+        /* Agrupamento de seletores. */
+        h2,h3{
+            font-family: Verdana;
+            text-transform: uppercase;
+            color: orange;
+
+        }
+
+        h2 {
+            text-align: center;
+            padding: 15px;
+            background-color: bisque;
+            text-shadow: 1px 2px 1px, -2px -2px 3px red;
+            font-size: 30px;
+            border-radius: 10px;
+
+
+        }
+
+        h3 {
+        
+        }
+        
+        article{
+            background-image: url(imagens/fundo01.jpg);
+            opacity:0.8;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 15px;
+            position: relative;
+            z-index: 2;
+            box-shadow: #b12b2b 5px 5px 5px;
+        }
+        #Text{
+            text-shadow: rgb(0, 0, 0) 2px 2px 3px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="Links.html">Voltar</a>
+    <header>
+        <h1>Senac Penha</h1>
+        <h2>Programador Web</h2>
+        <p>Curso da área de desenvovilmento de aplicações web.</p>
+    </header>
+    <hr>
+    <article>
+    <div id="Text">
+        <h3>Front-End</h3>
+
+        
+            <p>Está é a fase do site que fica vísivel para o úsuario</p>
+            <h3>Back-End</h3>
+            <p>Está parte não fica visivel para os úsuario no Site.</p>
+            <p>Estamos iniciando os estudo de condificação usando HTML.</p>
+            <p>Utilizamos o HTML para dar <strong>significado</strong>.</p>
+            <p>Quanto ao CSS usamos para <i>Estilizar </i> o Site.</p>
+            <p>Já o JS é uma linguagem de <u>programação</u>.</p>
+    </div>
+    </article>
+
+    <h3>Fullstack</h3>
+</body>
+
+</html>

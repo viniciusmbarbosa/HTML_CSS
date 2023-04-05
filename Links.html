@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-image: url(imagens/fundo01.jpg);
+        }
+
+        #home {
+            background-color: #d83939;
+            border-radius: 6px;
+            padding: 4px;
+            text-decoration: none;
+            color: #4d2525;
+        }
+
+        #home:hover {
+            color: green;
+            background: #d83939;
+            padding: 5px;
+        }
+
+        img {
+
+            opacity: 0.9;
+            border-radius: 30px;
+        }
+
+        header {
+            background: linear-gradient(to left, #4d2525, #d83939);
+            border-radius: 10px;
+            padding: 5px;
+            margin: 25px;
+            font-family: cursive;
+            font-size: 11px;
+            text-align: center;
+        }
+
+        #sites {
+            background:linear-gradient(#e67171, black,#882828);
+            border-radius: 7px;
+            padding: 5px 30px;
+            margin: 25px;
+            text-align: center;
+
+        }
+
+        a:hover {
+            color: green;
+            text-decoration: none;
+        }
+
+        a {
+            color: rgb(22, 97, 163);
+            box-shadow: #d83939 1px 1px 8px;
+            border-radius: 5px;
+        }
+
+        p {
+            /* line-height: 30px; altura de linha */
+            /* Altura e separação de linhas */
+            word-spacing: 0px;
+            letter-spacing: 1px;
+            font-size: larger;
+        }
+
+        #relativo {
+            background: linear-gradient(to right, rgb(158, 37, 37),
+                    rgb(38, 38, 138));
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            border-bottom: solid 2px ;
+            box-shadow: 2px 2px 2px rgba(255, 0, 0, 0.137);
+        }
+    </style>
+</head>
+
+<body>
+    <a id="home" href="tags.textuais copy.html">Voltar</a>
+    <header>
+        <h1>Trabalhando com links (ou hiperlinks) </h1>
+        <hr>
+        <h2>Absoluto (ou externo)</h2>
+    </header>
+
+    <main>
+
+        <div id="sites">
+            <p><a target="_blank" href="https://www.sp.senac.br/">Acesse o site do Senac Penha</a></p>
+            <p>Exemplo de sites úteis para estudos:
+                <a target="_blank" href="https://www.w3c.br/">W3C</a>, <a target="_blank"
+                    href="https://www.maujor.com/">Maujor</a> e <a target="_blank"
+                    href="https://tableless.com.br/">Tableless</a>.
+            </p>
+            <p><a target="
+                " href="https://www.microsoft.com/pt-br"><img src="imagens/mini-microsoft.jpg"></a></p>
+        </div>
+        <div id="link">
+            <h2 id="relativo">Relativo (ou interno)</h2>
+            <p>São links que navegam para página do seu proprio sitem ou sejam as páginas html internas que compoe o
+                site</p>
+            <p>Veja alguns exemplos que criamos recentemente:</p>
+            <a href="tags.textuais.html">Elementos de Texto</a>, <a href="Lista.html">Listas</a>
+            <p>
+                <a href="Exercicios/exercicio.html">Exercício 1 de HTML</a>
+        </div>
+    </main>
+    </p>
+    <br>
+    <br>
+    <table border="1">
+        <caption>Fechamendo mensal</caption>
+        <tbody>
+            <tr>
+                <th rowspan="3">Produto</th>
+                <th>varejo</th>
+                <th>Financeiro</th>
+                <th>Juridico</th>
+            </tr>
+            <tr>
+                <th>Calças</th>
+                <th>Rosangela</th>
+                <th>Geysa</th>
+                <th>Paula</th>
+
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox</title>
+<style>
+    /* Alterando o Box Model CSS para evitar problemas com dimensões, bordas e espaçamentos */
+    *{box-sizing: border-box;}
+    body{
+        font-family:'Segoe UI', Tahoma, verdana;
+        background:linear-gradient(to left,rgba(255, 0, 0, 0.753), rgba(0, 0, 255, 0.521));
+        
+    }
+    /* Tornando imagens responsivas/flexíveis */
+    img {max-width: 100%;}.
+    /* Para aprender flex https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    https://origamid.com/projetos/flexbox-guia-completo/ */
+
+    /* Flex Container 
+    Elemento principal/pai.*/
+    #exemplo{
+        box-shadow: black 0 0 5px;
+        padding: 5px;
+        /* Habilitar o Flexbox */
+        display:flex;
+        justify-content:space-evenly;
+
+        align-items:flex-end;
+        flex-direction:row;
+
+        width: 95%;
+        margin: auto;
+        height: 500px;
+    }
+
+
+
+    /* Flex Items 
+    Elemento filhos/descendentes de um container flex*/
+    article{
+        /* border: solid 1px red; */
+        padding: 8px;
+        width: 30%;
+    }
+</style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <hr>
+    <p>Flexbox é um mecanismo CSS3 que permite aplicar facilmente recursos de alinhamentos, espaçamentos e distribuição de elementos no HTML. Muito útil na elaboração de layouts.</p>
+
+    <!-- Flex container é o agrupamento Pai -->
+    <div id="exemplo">
+
+        <article>
+            <img src="imagens/mini-apple.jpg" alt="">
+            <h2>Apple</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, facilis laudantium? Tempora debitis nulla temporibus?</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-ibm.jpg" alt="">
+            <h2>IBM</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, facilis laudantium? Tempora debitis nulla temporibus?</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-microsoft.jpg" alt="">
+            <h2>Microsoft</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, facilis laudantium? Tempora debitis nulla temporibus?</p>
+        </article>
+
+    </div>
+
+</body>
+</html>

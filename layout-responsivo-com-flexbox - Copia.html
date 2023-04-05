@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Layout Responsivo</title>
+<style>
+
+/* justfy-content é usado para mudar de um lado para o outro */
+/* align-items é de cima para baixo */
+
+
+
+
+    /* Etapa 1: regras de uso geral */
+    * { box-sizing: border-box; }
+
+    body { 
+		font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+	} 
+    
+    #container {
+        box-shadow: black 0 0 5px;
+        padding: 5px;
+    }
+
+    header {
+        background-color: lightblue;
+        height: 80px;
+        text-align: center;
+    }
+
+    /* CSS reset "limpeza"*/
+    h1, h2, p {
+        margin: 0;
+        padding: 0;
+    }
+
+    p { padding: 5px 0; }
+
+    nav { background-color: yellow; }
+
+    /* Regra que vale para TODOS os articles */
+    article { padding: 1%; }
+
+    /* Regras para CADA UM dos articles */
+    #colunaA { background-color: darkseagreen; } 
+    #colunaB { background-color: darkgoldenrod; } 
+    #colunaC { background-color: darksalmon; } 
+    
+    footer {
+        background-color: gray;
+        height: 100px;
+    }
+
+    /* Etapa 2: regras de uso condicional */
+
+    /* Regra para telas a partir de 650px de largura */
+    @media screen and (min-width: 650px){
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav{
+            width: 50%;
+            height: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    }
+    @media screen and (min-width: 790px){
+        main{
+            display: flex;
+            /* Flex-wrap: Quando habilitado faz com que os elementos filhos sejam levamos ou quebrados para a linha de baixo caso não haja espaço suficiente para exibição lado a lado. */
+            flex-wrap:wrap
+        }
+        #colunaA{ width: 60%px;}
+        #colunaB{ width: 40%px;}
+        #colunaC{ width: 100%px;}
+    }
+
+    @media screen and (min-width:1000px){
+        main{
+            display:flex;
+            justify-content: space-between;
+            max-width: 1000px;
+        }
+        #colunaA{width: 33%;}
+        #colunaB{width: 33%;}
+        #colunaC{width: 33%;}
+
+    }
+    /* Exercicos
+    Crie uma nova regra condicional para telas apartit 1000px em que as seguintes alterações aconteçam: 
+    
+        -Cada coluna passará a ter 33% de largura 
+        
+        - os artigos deverão ter um espaçamento entre eles
+        
+        - A div container terá tamanho máximo de 1000px
+        e ficará centralizada na tela*/
+
+
+</style>
+</head>
+<body>
+
+    <div id="container">
+
+        <header>
+            <h1>Flexbox</h1>
+            <nav>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+            </nav>
+        </header>
+
+        <main> 
+            
+            <article id="colunaA">
+                <h2>Coluna A</h2>
+            
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis consequuntur quam beatae, in nostrum repellat, officia culpa eveniet provident dignissimos necessitatibus sint dolores? Itaque quaerat tenetur omnis, consequuntur quisquam aspernatur aliquid. Necessitatibus incidunt minus quibusdam enim ea accusantium ducimus, quos ab culpa quia nisi? Reprehenderit officia dolores deleniti, accusantium facilis. </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem corporis facilis totam facere qui reiciendis!</p>
+            </article>
+
+            <article id="colunaB">
+                <h2>Coluna B</h2>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quis repudiandae officia eaque facere quas nam voluptate labore, ratione odio necessitatibus qui fugit placeat assumenda culpa laudantium ex laboriosam possimus!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem corporis facilis totam facere qui reiciendis!</p>
+            </article>
+
+            <article id="colunaC">
+                <h2>Coluna C</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus similique amet rerum quos quisquam minima! Id a, velit nulla itaque tempore dignissimos consequuntur sunt saepe fugit, dolores hic veritatis ullam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem corporis facilis totam facere qui reiciendis!</p>
+            </article>
+
+        </main>
+
+        <footer>
+            <h2>Lorem ipsum dolor.</h2>
+        </footer>
+        
+    </div>
+
+</body>
+</html>

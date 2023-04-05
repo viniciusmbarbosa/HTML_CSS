@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: bisque;
+    padding: 20px;
+    margin: auto;
+}
+header{
+    background-color: deepskyblue;
+    border: solid 1px black;
+    border-radius: 10px;
+    
+}
+nav{
+    
+    font-size: 18px;
+    font-family: Verdana;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+ul{
+    list-style: none;
+    
+    
+}
+a{
+    text-decoration: none;
+
+}
+
